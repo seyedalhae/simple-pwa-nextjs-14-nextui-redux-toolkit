@@ -1,0 +1,1 @@
+# simple-pwa-nextjs-14-nextui-redux-toolkit

@@ -1,4 +1,3 @@
-import { TbLayoutDashboardFilled } from 'react-icons/tb';
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {

@@ -1,8 +1,6 @@
-import { practiceApi } from "@/services/practiceApi";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import { accountApi } from "@/services/accountApi";
 
 const persistConfig = {
 	key: "data",

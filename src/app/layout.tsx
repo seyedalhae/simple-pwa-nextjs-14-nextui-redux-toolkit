@@ -6,7 +6,6 @@ import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import { Navbar } from "@/components/navbar";
 import { ReduxProvider } from "@/redux/ReduxProvider";
 
 export const metadata: Metadata = {

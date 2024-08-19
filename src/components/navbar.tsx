@@ -5,7 +5,6 @@ import {
 	NavbarContent,
 	NavbarMenuToggle,
 	NavbarBrand,
-	NavbarItem,
 	// NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Kbd } from "@nextui-org/kbd";
@@ -14,17 +13,12 @@ import NextLink from "next/link";
 
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
-	TwitterIcon,
-	GithubIcon,
-	DiscordIcon,
-	HeartFilledIcon,
 	SearchIcon,
 	Logo,
 } from "@/components/icons";
-import React, { useState } from "react";
-import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+import React from "react";
+import { useAppDispatch } from "@/redux/hooks";
 import { toggleSidebar } from "@/redux/features/sidebarSlice";
-import AdminHamburger from "./layout/HamburgerMenu";
 
 export const Navbar = () => {
 	const dispatch = useAppDispatch();
@@ -73,7 +67,6 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1 pl-4 relative" justify="end">
 				<ThemeSwitch />
 				<NavbarMenuToggle onChange={() => dispatch(toggleSidebar())} className="hidden md:block" />
-				<AdminHamburger />
 			</NavbarContent>
 		</NextUINavbar>
 	);

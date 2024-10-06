@@ -1,25 +1,25 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Poramoozi panel",
+	name: "Nextjs pwa",
 	description:
-		"Interactive English learning platform.",
+		"This is a simple Nextjs 14 pwa.",
 	navItems: [
 		{
-			label: "داشبورد",
+			label: "Dashboard",
 			href: "/",
 		},
 		{
-			label: "تمرینات",
-			href: "/practice/list",
+			label: "Products",
+			href: "/products",
 		},
 		{
-			label: "تمرین جدید",
-			href: "/practice/create",
+			label: "Categories",
+			href: "/categories",
 		},
 		{
-			label: "دانشجویان",
-			href: "/student/list",
+			label: "Terms",
+			href: "/terms",
 		},
 	],
 	navMenuItems: [
